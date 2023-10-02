@@ -1,0 +1,26 @@
+.totalContainer {
+    width: 355px;
+    height: 96px;
+    padding: 0.625rem 0.9375rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.875rem;
+
+    border: 1px solid var(--color-grey-2);
+}
+
+.totalValueContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+
+    .totalContainer {
+        max-width: 90%;
+    }
+}
