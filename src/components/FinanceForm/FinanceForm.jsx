@@ -9,12 +9,15 @@ export const FinanceForm = ({addNote}) => {
     
     const submit = (e) => {
         e.preventDefault();
-
         const stringToNumber = Number(value)
 
-        addNote(description, stringToNumber, valueType);
-        setDescription("");
-        setValue("");
+        if(description !== "" && value !== "") {
+            
+            addNote(description, stringToNumber, valueType);
+            setDescription("");
+            setValue("");
+        }
+
     }
 
     return (
